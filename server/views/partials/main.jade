@@ -1,2 +1,10 @@
-h1 Welcome from jade partial
-h2 {{ myVar }}
+.container
+    .jumbotron
+        h1 MultiVision
+        p Welcome here. You probably get there becuase you was given a link to that page. :) PLease enjoy.
+
+    .row
+        .col-md-6
+            div(ng-include="'/partials/featured-courses'")
+        .col-md-6
+            div(ng-include="'/partials/new-courses'")

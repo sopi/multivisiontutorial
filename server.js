@@ -47,17 +47,6 @@ db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
     console.log('multivision db connect');
 });
-
-var messageSchema = mongoose.Schema({message: String});
-var Message = mongoose.model('Message', messageSchema);
-var mongoMessage;
-
-Message.findOne().exec(function(err, messageDoc){
-    console.log('mongo find one error: ' + err);
-    console.log('mongo find one messageDoc: ' + messageDoc);
-   mongoMessage = messageDoc && messageDoc.message || 'nothing';
-});
-
 app.get('/partials/:partialPath', function(req, res){
     res.render('partials/' + req.params.partialPath);
 });
@@ -65,9 +54,7 @@ app.get('/partials/:partialPath', function(req, res){
 // root website
 // asterisk route all pages
 app.get('*', function  (req, res) {
-    res.render('index', {
-        mongoMessage: mongoMessage
-    });
+    res.render('index');
 });
 
 var port = process.env.PORT || 3030;
