@@ -1,0 +1,17 @@
+{
+  "name": "MultiVision",
+  "version": "0.0.0",
+  "authors": [
+    "Piotr Sobczak <piotr.so@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.23",
+    "angular-resource": "~1.2.23",
+    "angular-route": "~1.2.23",
+    "toastr": "~2.0.3",
+    "commonjs": "~0.2.0"
+  }
+}
