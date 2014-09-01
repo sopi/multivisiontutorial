@@ -22,3 +22,9 @@ a:hover {
   color: #333;
   text-decoration: none;
 }
+.navbar-form .form-group {
+  margin-left: 10px;
+}
+.navbar-form button {
+  margin-left: 10px;
+}
