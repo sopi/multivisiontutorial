@@ -16,3 +16,5 @@ require('./server/config/passport')();
 
 app.listen(config.port);
 console.log('Listening on the port ' + config.port + '...');
+
+// test git push from obj
