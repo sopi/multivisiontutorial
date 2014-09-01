@@ -11,6 +11,6 @@ module.exports = {
     production: {
         rootPath: rootPath,
         db: 'mongodb://sopi:1234Qwer@ds033760.mongolab.com:33760/multivisionsopi',
-        process: process.env.PORT || 80
+        port: process.env.PORT || 80
     }
 };
